@@ -1,0 +1,19 @@
+{
+  "name": "canihuellas-remoto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiangancino/Canihuellas-remoto.git"
+  },
+  "author": "Sebas <sjgancino97sd@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastiangancino/Canihuellas-remoto/issues"
+  },
+  "homepage": "https://github.com/sebastiangancino/Canihuellas-remoto#readme"
+}

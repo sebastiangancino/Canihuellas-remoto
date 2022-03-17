@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .container {
@@ -89,21 +90,63 @@ body {
 }
 
 .titulobanner h1{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     text-align: start;
-    width: 50%;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: Anton, sans-serif;
     padding-left: 10px;
+   
 }
+/*titulo*/
+.titulo h1 {
+    
+    font-family:Anton, sans-serif;
+   text-align: center;
+   font-size: 6rem;
+   color: #7CF56E;
+   border: 10px, solid;
+   border-color: goldenrod
+}
+
 
 /*presentación*/
 
 .presentacion {
     display: grid;
-    
+    grid-gap: 20px;
+    grid-template-columns:repeat(2, 1fr); 
 }
 
 .presentacion img {
-    width: 40%;
+   width: auto;
+   height: auto;
+}
+
+.presentacion  {
+    text-align: justify;
+    align-items: center;
+}
+.contenedor-fotos img {
+    width: 400px;
+    height: 200px;
+    
+    
+}
+.contenedor-fotos {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: max-content;
+   object-fit: cover;
+   padding-left: 10px;
+    
+}
+.contenedor-texto {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: max-content;
+   object-fit: cover;
+    
 }
