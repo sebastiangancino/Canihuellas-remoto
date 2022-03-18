@@ -101,10 +101,16 @@ body {
 
 /*paseo*/
 
+
+
  .paseo-info h1 {
     text-align: center;
-    padding: 30px 0;
+   
+}
 
+.paseo-info img {
+    padding: 0;
+   
 }
  .contenedor-paseo {
      display: grid;
@@ -141,9 +147,7 @@ body {
    width: 400px;
 }
 
-.contenedor-texto p {
-    padding: 5px 18px;
-}
+
 /*titulo*/
 .titulo h1 {
     
@@ -156,7 +160,7 @@ body {
 }
 
 
-/*presentación*/
+/*presentación canihuellas paseo c*/
 
 .presentacion {
     display: grid;
@@ -173,34 +177,29 @@ body {
     text-align: justify;
     align-items: center;
 }
-.contenedor-fotos img {
-    width: 400px;
-    height: 200px;
-    
-    
-}
-.contenedor-fotos {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: max-content;
-   object-fit: cover;
-   padding-left: 10px;
-    
-}
-.contenedor-texto {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: max-content;
-   object-fit: cover;
-    
-}
+.presentacion h3 {
+    padding: 0 25px;
+ }
 
-.contenedor-texto p {
-    width: 25rem;
-    padding: 15px 5px;
-}
+/*Paseo info*/
+ .paseo-info .contenedor-fotos{
+    display: grid;
+    gap: 20px;
+     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+    .contenedor-fotos img {
+     width: 100%;
+     height: 200px;
+     padding: 10px 15px;
+      
+    }
+    .contenedor-texto {
+        display: grid;
+    gap: 20px;
+     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    
+    }
+
 hr {
     height: 1px;
 }
@@ -259,3 +258,81 @@ hr {
     align-content: center;
     color: #000;
 }
+
+/*Media querys*/
+@media only screen and (max-width: 480px ){
+
+}
+
+@media only screen and (max-width: 768px ){
+   
+   /*Banner*/
+    .nav__links {
+        display: none;       
+}
+
+.titulobanner h1 {
+font-size: 3rem;
+}
+ /*¨Paseamos por ti*/
+  .contenedor-paseo .titulo-paseo h1 {
+      font-size: 3rem;
+  }
+/*Canihuellas, paseo canino*/
+ .titulo h1 {
+     font-size: 3rem;
+     padding-bottom: 20px;
+ }
+
+ .presentacion h3 {
+     font-size: 1rem;
+ }
+/*Beneficios*/
+
+.contenedor-paseo {
+     display: grid;
+     grid-template-areas: 
+     "titulo-paseo titulo-paseo"
+     "imagen-paseo imagen-paseo"
+     "imagen-paseo texto-paseo";
+      
+ }
+
+ .paseo-info .contenedor-fotos img{
+     object-fit: cover;
+    }
+    .paseo-info p {
+        padding: 10px 15px;
+    }
+ .contenedor-paseo .titulo-paseo h1{
+     font-size: 6rem;
+     font-family:Anton, sans-serif;
+     color: #70a6f9;
+     padding: 15px;
+     text-align: center;
+
+ }
+ .contenedor-paseo .texto-paseo p{
+    font-size:1rem;
+    color: black;
+    padding-top: 30px;
+     text-align: center;
+     padding: 0 4rem;
+}
+
+.contenedor-paseo .imagen-paseo {
+    justify-content: center;
+    margin: 0 auto;
+}
+ .contenedor-paseo img {
+  height: 500px;
+   width: 400px;
+}
+
+.contenedor-texto p {
+    padding: 5px 18px;
+}
+
+/*Footer*/
+}
+
